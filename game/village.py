@@ -579,6 +579,8 @@ class Village:
         }
         self.set_cache(self.village_id, entry=village_entry)
 
+    # def get_cache
+
     def set_cache(self, village_id, entry):
         t_path = os.path.join("cache", "managed", village_id + ".json")
         with open(t_path, "w") as f:

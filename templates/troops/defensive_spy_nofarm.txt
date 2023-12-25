@@ -1,0 +1,39 @@
+[{
+  "building": "barracks",
+  "level": 1,
+  "build": {
+    "barracks": {
+      "spear": 9300
+    }
+  },
+  "farm": {}
+},
+{
+  "building": "smith",
+  "level": 1,
+  "build": {
+    "barracks": {
+      "spear": 9300,
+      "sword": 4000
+    },
+    "stable": {
+      "spy": 300
+    }
+  },
+  "farm": {}
+},
+{
+  "building": "smith",
+  "level": 15,
+  "build": {
+    "barracks": {
+      "spear": 9300,
+      "sword": 4000
+    },
+    "stable": {
+      "spy": 300,
+      "heavy": 1200
+    }
+  },
+  "farm": {}
+}]

@@ -1,0 +1,10 @@
+[
+    {
+        "building": "main",
+        "level": 1,
+        "build": {},
+        "farm": [
+            {"light": 10}
+        ]
+    }
+]

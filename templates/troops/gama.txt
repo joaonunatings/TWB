@@ -1,0 +1,20 @@
+[
+    {
+        "building": "main",
+        "level": 1,
+        "build": {
+            "barracks": {
+                "spear": 1000,
+                "sword": 1000
+            },
+            "stable": {
+                "spy": 500
+            }
+        },
+        "farm": [
+            {"spear": 50},
+            {"sword": 26},
+            {"spear": 16, "sword": 20}
+        ]
+    }
+]

@@ -1,8 +1,10 @@
+import json
+import os
+
 from core.extractors import Extractor
 import time
 import logging
 import re
-
 
 class BuildingManager:
     logger = None
@@ -11,6 +13,7 @@ class BuildingManager:
     max_lookahead = 2
 
     queue = []
+    in_queue = []
     waits = []
     waits_building = []
 
@@ -87,7 +90,7 @@ class BuildingManager:
             result = self.get_next_building_action()
             if not result:
                 self.logger.info(
-                    "No build more operations where executed (%d current, %d left)"
+                    "No more build operations where executed (%d current, %d left)"
                     % (len(self.waits), len(self.queue))
                 )
                 return False
@@ -218,10 +221,12 @@ class BuildingManager:
                 return self.get_next_building_action(0)
 
         if len(self.queue):
+
             entry = self.queue[index]
             entry, min_lvl = entry.split(":")
             min_lvl = int(min_lvl)
-            if min_lvl <= self.levels[entry]:
+            level_next = int(self.costs[entry]["level_next"])
+            if level_next > min_lvl or min_lvl <= self.levels[entry]:
                 self.queue.pop(index)
                 return self.get_next_building_action(index=index)
             if entry not in self.costs:
@@ -266,3 +271,11 @@ class BuildingManager:
                 return True
             else:
                 return self.get_next_building_action(index + 1)
+
+    @staticmethod
+    def get_cache(village_id):
+        t_path = os.path.join("cache", "managed", village_id + ".json")
+        if os.path.exists(t_path):
+            with open(t_path, "r") as f:
+                return json.load(f)
+        return None

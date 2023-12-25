@@ -1,0 +1,23 @@
+[
+    {
+        "building": "main",
+        "level": 1,
+        "build": {
+            "barracks": {
+                "axe": 5000
+            },
+            "stable": {
+                "light": 2500
+            },
+            "garage": {
+                "ram": 300
+            }
+        },
+        "farm": [
+            {"ram": 2, "light": 10},
+            {"ram": 2, "axe": 40},
+            {"light": 10},
+            {"axe": 40}
+        ]
+    }
+]

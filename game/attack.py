@@ -131,7 +131,7 @@ class AttackManager:
         )
         for vid in self.map.villages:
             village = self.map.villages[vid]
-            if village["owner"] != "0" and vid not in self.extra_farm:
+            if village["owner"] != "0" and int(vid) not in self.extra_farm:
                 if vid not in self.ignored:
                     self.logger.debug(
                         "Ignoring village %s because player owned, add to additional_farms to auto attack"
@@ -139,7 +139,7 @@ class AttackManager:
                     )
                     self.ignored.append(vid)
                 continue
-            if my_village and "points" in my_village and "points" in village:
+            if my_village and "points" in my_village and "points" in village and int(vid) not in self.extra_farm:
                 if village["points"] >= self.farm_maxpoints:
                     if vid not in self.ignored:
                         self.logger.debug(

@@ -1,0 +1,39 @@
+[{
+  "building": "smith",
+  "level": 2,
+  "build": {
+    "barracks": {
+      "axe": 6650
+    }
+  },
+  "farm": {}
+},
+{
+  "building": "stable",
+  "level": 3,
+  "build": {
+    "barracks": {
+      "axe": 6650
+    },
+    "stable": {
+      "light": 2900
+    }
+  },
+  "farm": {}
+},
+{
+  "building": "garage",
+  "level": 1,
+  "build": {
+    "barracks": {
+      "axe": 9300
+    },
+    "stable": {
+      "light": 2900
+    },
+    "garage": {
+      "ram": 450
+    }
+  },
+  "farm": {}
+}]

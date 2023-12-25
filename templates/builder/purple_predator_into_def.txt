@@ -99,7 +99,6 @@ storage:15
 farm:18
 main:20
 smith:20
-snob:1
 farm:20
 barracks:15
 wall:20
@@ -117,7 +116,6 @@ iron:23
 storage:25
 barracks:20
 stable:20
-garage:10
 market:20
 wood:30
 stone:30

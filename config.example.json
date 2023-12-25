@@ -71,24 +71,24 @@
     "attack_higher_points": false,
     "force_scout_if_available": true
   },
-  "market": {
-    "auto_trade": true,
-    "max_trade_duration": 1,
-    "auto_remove": true,
-    "trade_multiplier": true,
-    "trade_multiplier_value": 1.0,
-    "trade_max_per_hour": 1
-  },
-  "world": {
-    "knight_enabled": null,
-    "flags_enabled": null,
-    "quests_enabled": null,
-    "trade_for_premium": false,
-    "archers_enabled": true,
-    "building_destruction_enabled": true,
-    "boosters_enabled": null
-  },
-  "villages": {
+    "market": {
+        "auto_trade": true,
+        "max_trade_duration": 1,
+        "auto_remove": true,
+        "trade_multiplier": true,
+        "trade_multiplier_value": 1.0,
+        "trade_max_per_hour": 1
+    },
+    "world": {
+        "knight_enabled": null,
+        "flags_enabled": null,
+        "quests_enabled": null,
+        "trade_for_premium": false,
+        "archers_enabled": true,
+        "building_destruction_enabled": true,
+        "boosters_enabled": null
+    },
+    "villages": {
 
-  }
+    }
 }

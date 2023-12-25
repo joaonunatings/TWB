@@ -1,0 +1,38 @@
+[
+    {
+        "building": "main",
+        "level": 1,
+        "build": {
+            "stable": {
+                "light": 500
+            },
+            "barracks": {
+                "axe": 500
+            }
+        },
+        "farm": [
+            {"light": 2, "spy": 1},
+            {"spear": 4, "sword": 4, "spy": 1},
+            {"spear": 4, "sword": 2, "axe": 2, "spy": 1},
+            {"spear": 3, "sword": 4, "axe": 2, "spy": 1},
+            {"axe": 3, "spear": 5, "spy": 1},
+            {"axe": 3, "sword": 5, "spy": 1},
+            {"axe": 5, "sword": 3, "spear": 3, "spy": 1},
+            {"axe": 10, "spy": 1},
+            {"knight": 1, "spy": 1},
+            {"sword": 10, "spy": 1},
+            {"spear": 14, "spy": 1},
+            {"light": 2},
+            {"spear": 4, "sword": 4},
+            {"spear": 4, "sword": 2, "axe": 2},
+            {"spear": 3, "sword": 4, "axe": 2},
+            {"axe": 3, "spear": 5},
+            {"axe": 3, "sword": 5},
+            {"axe": 5, "sword": 3, "spear": 3},
+            {"axe": 10},
+            {"knight": 1},
+            {"sword": 10},
+            {"spear": 14}
+        ]
+    }
+]

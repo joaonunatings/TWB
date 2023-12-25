@@ -82,9 +82,23 @@ class TroopManager:
                 "Recruitment: %s" % self.game_data["village"]["name"]
             )
         self.troops = {}
+        troops_count = {
+            "spear": 0,
+            "sword": 0,
+            "axe": 0,
+            "knight": 0,
+            "light": 0,
+            "heavy": 0,
+            "ram": 0,
+            "spy": 0,
+            "catapult": 0,
+            "snob": 0
+        }
         for u in Extractor.units_in_village(main_data):
             k, v = u
-            self.troops[k] = v
+            troops_count[k] += 1
+            if troops_count[k] < 3:
+                self.troops[k] = v
 
         self.logger.debug("Units in village: %s" % str(self.troops))
 

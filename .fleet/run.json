@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "run bot",
+            "program": "python",
+            "args": ["twb.py"],
+        },
+        {
+            "type": "command",
+            "workingDir": "webmanager",
+            "name": "run server",
+            "program": "python",
+            "args": ["server.py"]
+        }
+    ]
+}
